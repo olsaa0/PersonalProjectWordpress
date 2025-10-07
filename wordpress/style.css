@@ -11,6 +11,146 @@ Version:1.0
 Tags:custom-menu,custom-logo,featured-images,educational-purposes
 */
 
+
+
+/*
+Theme Name: Photo Exhibition
+Author: Your Name
+Version: 1.0
+Description: A custom WordPress theme for showcasing photography
+*/
+
+/*
+Theme Name: Photo Exhibition
+Author: Your Name
+Version: 1.0
+Description: A custom WordPress theme for showcasing photography
+*/
+
+/* style.css */
+
+/* Reset & basics */
+body, h1, h3, p, ul, li {
+  margin: 0; padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #222;
+}
+a {
+  color: #0073aa;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Simple nav */
+nav.simple-nav {
+  background: #f5f5f5;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+nav.simple-nav a {
+  margin: 0 12px;
+  font-weight: 600;
+  color: #0073aa;
+}
+
+/* Layout */
+.main-wrapper {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 40px;
+}
+.content-left {
+  flex: 3;
+}
+.sidebar-right {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.sidebar-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Hero */
+section.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+section.hero p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Photo Grid */
+section.photo-grid .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.photo-item {
+  text-align: center;
+}
+.photo-item h3 {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-wrapper {
+    flex-direction: column;
+  }
+  .sidebar-right {
+    margin-top: 30px;
+    justify-content: flex-start;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
