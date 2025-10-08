@@ -11,139 +11,121 @@ Version:1.0
 Tags:custom-menu,custom-logo,featured-images,educational-purposes
 */
 
-
-
-/*
-Theme Name: Photo Exhibition
-Author: Your Name
-Version: 1.0
-Description: A custom WordPress theme for showcasing photography
-*/
-
-/*
-Theme Name: Photo Exhibition
-Author: Your Name
-Version: 1.0
-Description: A custom WordPress theme for showcasing photography
-*/
-
-/* style.css */
-
-/* Reset & basics */
-
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: Arial, sans-serif;
   background: #fafafa;
 }
 
-.site-header, .site-footer {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
-
-.hero {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: #222;
-  color: white;
-}
-
-.gallery {
-  padding: 2rem;
-  text-align: center;
-}
-
-.photo-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.photo-item {
-  width: 250px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.photo-item img {
-  width: 100%;
-  border-radius: 10px 10px 0 0;
-}
-.gallery-page {
-  padding: 2rem;
-  background: #f8f8f8;
-}
-
-.gallery-page h1 {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #111;
-}
-
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-.photo-item {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.2s ease;
-}
-
-.photo-item:hover {
-  transform: scale(1.03);
-}
-
-.photo-thumb img {
-  width: 100%;
-  display: block;
-  border-bottom: 3px solid #eee;
-}
-
-.photo-title {
-  text-align: center;
-  margin: 0.75rem 0;
-  font-size: 1.1rem;
-}
-
-.photo-title a {
-  color: #333;
-  text-decoration: none;
-}
-
-.photo-title a:hover {
-  color: #0073aa;
-}
-
-.photo-meta {
-  text-align: center;
-  color: #777;
-  font-size: 0.9rem;
-  padding-bottom: 1rem;
-}
-
+/* Hero / Top Title */
 .hero-title {
   text-align: center;
-  padding: 4rem 1rem;
-  background: #222; /* Dark background for contrast */
+  padding: 6rem 1rem;
+  background: #222;
   color: #fff;
   font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .hero-title h1 {
-  font-size: 4rem; /* Big letters */
+  font-size: 5rem; /* big letters */
   margin: 0;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
+
+/* Horizontal Gallery Section */
+.horizontal-gallery {
+  display: flex;
+  overflow-x: auto;
+  padding: 2rem 0;
+  background-color: #f4f4f4;
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  padding-left: 2rem;
+}
+
+.gallery-item {
+  flex: 0 0 auto;
+  width: 400px; /* make photos bigger horizontally */
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Gallery info */
+.gallery-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.gallery-excerpt {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Optional Scrollbar Styling for Horizontal Gallery */
+.horizontal-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-gallery::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+.horizontal-gallery::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.horizontal-gallery::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.hero-title .hero-subtitle {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-top: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background-color: #0073aa;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hero-button:hover {
+  background-color: #005f8d;
+  transform: scale(1.05);
+}
+
+
 
 
 

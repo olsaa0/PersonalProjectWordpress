@@ -2,47 +2,33 @@
 
 <main class="site-main gallery-page">
 
-  <!-- Hero / Title Section -->
-  <section class="hero-title">
-    <h1>Photo Exhibition</h1>
-  </section>
-
-  <!-- Gallery Section -->
-  <section class="gallery">
+  <!-- Horizontal Gallery Section -->
+  <section class="horizontal-gallery">
     <?php if ( have_posts() ) : ?>
-      <div class="photo-grid">
+      <div class="gallery-wrapper">
         <?php while ( have_posts() ) : the_post(); ?>
-          <article id="post-<?php the_ID(); ?>" <?php post_class('photo-item'); ?>>
+          <article id="post-<?php the_ID(); ?>" <?php post_class('gallery-item'); ?>>
             <?php if ( has_post_thumbnail() ) : ?>
-              <a href="<?php the_permalink(); ?>" class="photo-thumb">
-                <?php the_post_thumbnail('medium'); ?>
+              <a href="<?php the_permalink(); ?>" class="gallery-thumb">
+                <?php the_post_thumbnail('large'); ?>
               </a>
             <?php else : ?>
-              <a href="<?php the_permalink(); ?>" class="photo-thumb">
+              <a href="<?php the_permalink(); ?>" class="gallery-thumb">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/placeholder.jpg" alt="Placeholder image">
               </a>
             <?php endif; ?>
-
-            <h2 class="photo-title">
-              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-            </h2>
-
-            <div class="photo-meta">
-              <span>by <?php the_author(); ?></span> |
-              <span><?php echo get_the_date(); ?></span>
+            <div class="gallery-info">
+              <h2 class="gallery-title"><?php the_title(); ?></h2>
+              <p class="gallery-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
             </div>
           </article>
         <?php endwhile; ?>
       </div>
-
-      <div class="pagination">
-        <?php the_posts_pagination(); ?>
-      </div>
-
     <?php else : ?>
-      <p>No photos found.</p>
+      <p>No exhibitions found.</p>
     <?php endif; ?>
   </section>
+
 </main>
 
 <?php get_footer(); ?>

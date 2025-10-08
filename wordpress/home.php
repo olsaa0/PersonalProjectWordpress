@@ -2,8 +2,8 @@
 
 <main class="home-container">
   <section class="hero">
-    <h1>Welcome to the Photo Exhibition</h1>
-    <p>Explore stunning photography from around the world</p>
+    <h1>.</h1>
+    <p>.</p>
   </section>
 
   <section class="gallery">
@@ -12,7 +12,7 @@
       <?php
       // Example loop — later you’ll replace this with WP posts or custom post types
       $photos = [
-        ['title' => 'Sunset Bliss', 'url' => get_template_directory_uri() . '/images/photo1.jpg'],
+        ['title' => 'Sunset Bliss', 'url' => get_template_directory_uri() . '/images/cover.png'],
         ['title' => 'City Lights', 'url' => get_template_directory_uri() . '/images/photo2.jpg'],
         ['title' => 'Nature Harmony', 'url' => get_template_directory_uri() . '/images/photo3.jpg']
       ];
