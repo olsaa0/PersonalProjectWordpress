@@ -12,6 +12,7 @@
 <header class="hero-title">
     <h1>Photo Exhibition</h1>
     <p class="hero-subtitle">Explore our curated collection of stunning photography exhibitions from around the world.</p>
-    <!-- Exhibitions link button -->
-    <a href="<?php echo site_url('/exhibitions'); ?>" class="hero-button">Exhibitions</a>
+    <a href="<?php echo site_url('/books'); ?>" class="hero-button">Books</a>
+    <a href="<?php echo site_url('/about'); ?>" class="hero-button">About</a>
 </header>
+

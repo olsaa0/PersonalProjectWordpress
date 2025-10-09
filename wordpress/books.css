@@ -1,0 +1,54 @@
+/* books.css - specific for Books page */
+
+.books-page {
+    padding: 2rem 1rem;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.book-item {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.book-item:hover {
+    transform: scale(1.03);
+}
+
+.book-thumb img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.book-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.book-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.book-title a:hover {
+    color: #0073aa;
+}
+
+.book-excerpt {
+    font-size: 0.9rem;
+    color: #555;
+}

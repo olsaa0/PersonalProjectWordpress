@@ -1,4 +1,8 @@
 <?php get_header(); ?>
+<div class="nav-links">
+    <a href="<?php echo home_url('/books'); ?>">Books</a>
+    <a href="<?php echo home_url('/about'); ?>">About</a>
+</div>
 
 <main class="site-main gallery-page">
 
