@@ -11,12 +11,442 @@ Version:1.0
 Tags:custom-menu,custom-logo,featured-images,educational-purposes
 */
 
+/* ===== General Page Styling ===== */
+/* ===== General Page Styling ===== */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa;
+  color: #222;
+}
+
+/* ===== Hero Section ===== */
+.hero-title {
+  text-align: center;
+  padding: 6rem 1rem;
+  background-color: #222;
+  color: #fff;
+}
+
+.hero-title h1 {
+  font-size: 5rem;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #ddd;
+  margin-top: 1rem;
+}
+
+/* ===== Navigation Buttons ===== */
+.nav-links {
+  margin-top: 2rem;
+}
+
+.nav-links .hero-button {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0.8rem 2rem;
+  background-color: #0073aa;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links .hero-button:hover {
+  background-color: #005f8d;
+  transform: scale(1.05);
+}
+
+/* ===== Main Container ===== */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+/* ===== Gallery Section ===== */
+.gallery {
+  margin-top: 4rem;
+}
+
+.gallery h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #0d3b66;
+}
+
+/* ===== Photo Grid ===== */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.photo-item {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+.photo-item img {
+  width: 100%;
+  display: block;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo-item:hover img {
+  transform: scale(1.05);
+}
+
+.photo-item h3 {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero-title h1 {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .photo-item img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-item img {
+    height: 150px;
+  }
+}
+/* ===== Home Page Styling ===== */
+.hero-title {
+  text-align: center;
+  padding: 6rem 1rem;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* cute gradient */
+  color: #fff;
+  font-family: 'Comic Sans MS', cursive, Arial;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.hero-title h1 {
+  font-size: 5rem; /* big letters */
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fffdfd;
+}
+
+/* Buttons */
+.nav-links {
+  margin-top: 2rem;
+}
+
+.hero-button {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0.8rem 2rem;
+  background-color: #ff6f91;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #ff3e61;
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Gallery Section */
+.gallery {
+  padding: 4rem 8%;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #ff6f91;
+}
+
+.photo-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-item {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  text-align: center;
+}
+
+.photo-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+}
+
+.photo-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ff6f91;
+  transition: transform 0.3s ease;
+}
+
+.photo-item:hover img {
+  transform: scale(1.1);
+}
+
+.photo-item h3 {
+  margin: 1rem 0;
+  color: #ff6f91;
+  font-family: 'Comic Sans MS', cursive, Arial;
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title h1 {
+    font-size: 4rem;
+  }
+  .photo-item {
+    width: 90%;
+  }
+}
 
 
 
+/* ===== Books Page Styling ===== */
+.books-page {
+  padding: 4rem 8%;
+  background-color: #f0f4f8;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #222;
+}
+
+/* ===== Page Header ===== */
+.page-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ff6f61; /* bold and colorful */
+  margin-bottom: 0.5rem;
+}
+
+.page-header .page-description {
+  font-size: 1.3rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===== Books Grid ===== */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+/* ===== Individual Book Card ===== */
+.book-item {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  position: relative;
+}
+
+/* Unique gradient backgrounds for variety */
+.book-item:nth-child(3n+1) { background: linear-gradient(135deg, #f6d365, #fda085); }
+.book-item:nth-child(3n+2) { background: linear-gradient(135deg, #a1c4fd, #c2e9fb); }
+.book-item:nth-child(3n+3) { background: linear-gradient(135deg, #d4fc79, #96e6a1); }
+
+.book-item:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* ===== Book Thumbnail ===== */
+.book-thumb img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.book-item:hover .book-thumb img {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
+
+/* ===== Book Info ===== */
+.book-info {
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.book-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.book-excerpt {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* ===== Fun Ribbon Badge (Optional) ===== */
+.book-item::before {
+  content: "HOT";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  background-color: #ff3e41;
+  color: white;
+  padding: 5px 25px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transform: rotate(-45deg);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  display: block;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .book-thumb img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-thumb img {
+    height: 200px;
+  }
+}
 
 
 
+/* ===== About Page Styling ===== */
+.about-page {
+  font-family: 'Comic Sans MS', cursive, Arial;
+  color: #333;
+  background-color: #fff8f5;
+  padding: 4rem 8%;
+}
+
+/* ===== About Hero ===== */
+.about-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* cute gradient */
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  margin-bottom: 3rem;
+}
+
+.about-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+/* ===== About Content ===== */
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f6d365, #fda085); /* subtle gradient for content */
+  padding: 3rem 2rem;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== About Text ===== */
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* ===== About Meta ===== */
+.about-meta {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-meta p {
+  font-size: 1rem;
+  font-weight: bold;
+  background: #fff0f5;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  color: #ff6f91;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-meta p:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* ===== Res*
 
 
 

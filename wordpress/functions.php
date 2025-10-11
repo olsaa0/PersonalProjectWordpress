@@ -28,16 +28,16 @@ function photo_exhibition_enqueue_styles() {
             array('photo-exhibition-style'), // load after main style
             wp_get_theme()->get('Version')
         );
+    }
 
-         if (is_page_template('page-exhibiton.php')) {
+    // Exhibition page stylesheet (only loads on Exhibition page)
+    if (is_page_template('page-exhibition.php')) {
         wp_enqueue_style(
-            'exhibiton-css',
-            get_template_directory_uri() . '/exhibiton.css',
+            'exhibition-css',
+            get_template_directory_uri() . '/exhibition.css',
             array('photo-exhibition-style'), // load after main style
             wp_get_theme()->get('Version')
         );
-    }
-
     }
 }
 add_action('wp_enqueue_scripts', 'photo_exhibition_enqueue_styles');
