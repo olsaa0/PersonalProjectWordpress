@@ -19,10 +19,20 @@ get_header();
         </div>
 
         <div class="exhibition-item">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/exhibition2.jpg" alt="Exhibition 2">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/swirl.png" alt="Swirl">
             <h2>Echoes of Nature</h2>
             <p>Capturing the harmony between humans and the natural world.</p>
         </div>
+
+        <section class="exhibition-gallery">
+        <div class="exhibition-item">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/woods.png" alt="Woods">
+            <h2>Urban Light</h2>
+            <p>A photographic journey through city life and light contrasts.</p>
+        </div>
+
+        
+
     </section>
 </main>
 

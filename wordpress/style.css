@@ -405,7 +405,7 @@ body {
 .about-content {
   max-width: 900px;
   margin: 0 auto;
-  background: linear-gradient(135deg, #f6d365, #fda085); 
+  background: linear-gradient(135deg, #fc9bc8, #fdc5e1); 
   padding: 3rem 2rem;
   border-radius: 25px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
@@ -577,6 +577,31 @@ body {
 }
 
 
+
+
+h1.site-title, 
+.wp-block-site-title, 
+.wp-block-site-title a, 
+h1 a, 
+header h1 a, 
+header .wp-block-site-title a {
+  color: #fcb3d7 !important;  
+  text-decoration: none !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+
+
+h1.site-title a:hover,
+.wp-block-site-title a:hover,
+header h1 a:hover {
+  color: #ff99cc !important;
+  text-shadow: 0 0 1
+}
 
 
 
