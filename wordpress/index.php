@@ -18,14 +18,14 @@
   </section>
 
   <section class="gallery">
-    <h2>Featured Photos</h2>
+    <h2>~Featured Artwork~</h2>
     <div class="photo-grid">
       <?php
-      // Example loop — later you’ll replace this with WP posts or custom post types
+      
       $photos = [
-        ['title' => 'Sunset Bliss', 'url' => get_template_directory_uri() . '/images/cover.png'],
-        ['title' => 'City Lights', 'url' => get_template_directory_uri() . '/images/modern.png'],
-        ['title' => 'Nature Harmony', 'url' => get_template_directory_uri() . '/images/circle.png']
+        ['title' => 'Dance on the air', 'url' => get_template_directory_uri() . '/images/cover.png'],
+        ['title' => 'On and on', 'url' => get_template_directory_uri() . '/images/modern.png'],
+        ['title' => 'Color Harmony', 'url' => get_template_directory_uri() . '/images/circle.png']
       ];
 
       foreach ($photos as $photo) {

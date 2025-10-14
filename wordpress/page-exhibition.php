@@ -13,7 +13,7 @@ get_header();
 
     <section class="exhibition-gallery">
         <div class="exhibition-item">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/exhibition1.jpg" alt="Exhibition 1">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/nature.png" alt="Nature">
             <h2>Urban Light</h2>
             <p>A photographic journey through city life and light contrasts.</p>
         </div>
